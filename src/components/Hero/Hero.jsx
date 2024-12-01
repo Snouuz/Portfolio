@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hero.css";
-import ia from "../../assets/ia.jpeg";
-import cv from "../../assets/CV_Reda.pdf";
+import ia from "/icons/ia.jpeg";
+import cv from "/icons/CV_Reda.pdf";
 
 const Hero = () => {
   const handleDownload = () => {

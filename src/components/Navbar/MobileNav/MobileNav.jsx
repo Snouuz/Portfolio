@@ -1,6 +1,6 @@
 import React from "react";
 import "./MobileNav.css";
-import logo from "../../../assets/logoWhite.svg";
+import logo from "/icons/logoWhite.svg";
 
 const MobileNav = ({ isOpen, toggleMenu }) => {
   return (

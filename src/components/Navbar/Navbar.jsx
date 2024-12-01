@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "../../assets/logoWhite.svg";
+import logo from "/icons/logoWhite.svg";
 import MobileNav from "./MobileNav/MobileNav";
 
 const Navbar = () => {

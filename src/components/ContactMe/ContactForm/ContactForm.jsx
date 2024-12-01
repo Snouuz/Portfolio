@@ -1,62 +1,103 @@
-import React, { useRef } from "react";
 import "./ContactForm.css";
 import emailjs from "@emailjs/browser";
+import React, { useRef, useState, useEffect } from "react";
+
 
 const ContactForm = () => {
   const form = useRef();
+  const [isSending, setIsSending] = useState(false);
+  const [errors, setErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (isSubmitted) {
+      const timer = setTimeout(() => {
+        setErrors({});
+        setIsSubmitted(false);
+      }, 5000);
+      return () => clearTimeout(timer);
+    }
+  }, [isSubmitted]);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    const formData = new FormData(form.current);
+    const firstname = formData.get("firstname").trim();
+    const lastname = formData.get("lastname").trim();
+    const email = formData.get("email").trim();
+    const message = formData.get("message").trim();
 
+    const newErrors = {};
+    if (!firstname) newErrors.firstname = "Firstname can't be blank";
+    if (!lastname) newErrors.lastname = "Lastname can't be blank";
+    if (!email || !/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = "Enter a valid email address";
+    }
+    if (!message) newErrors.message = "Message can't be blank";
+
+    setErrors(newErrors);
+    setIsSubmitted(true);
+
+    if (Object.keys(newErrors).length > 0) return;
+
+    setIsSending(true);
     emailjs
-      .sendForm("service_mh5vhv6", "template_hygmyrm", form.current, {
-        publicKey: "VPt-jEXPYzc2UFUDe",
-      })
+      .sendForm("service_mh5vhv6", "template_hygmyrm", form.current, "VPt-jEXPYzc2UFUDe")
       .then(
         () => {
-          console.log("SUCCESS!");
           resetEmail();
+          setIsSending(false);
         },
-        (error) => {
-          console.log("FAILED...", error.text);
+        () => {
+          setIsSending(false);
         }
       );
   };
-  const resetEmail = () => {
-    document.getElementById("myform").reset();
-  };
-  {
-    return (
-      <div className="contact-form-contant">
-        <form id="myform" ref={form} onSubmit={sendEmail}>
-          <div className="name-container">
-            <div className="input-identity">
-              <input type="text" name="firstname" placeholder="First Name" />
-              <div className="error-txt error">Firtname can't be blank</div>
-            </div>
-            <div className="input-identity">
-              <input type="text" name="lastname" placeholder="Last Name" />
-              <div className="error-txt error">Lastname can't be blank</div>
-            </div>
-          </div>
-          <input type="text" name="email" placeholder="Email" />
-          <div className="error-email-message error">
-            Email address can't be blank
-          </div>
-          <textarea
-            type="text"
-            name="message"
-            placeholder="Message"
-            rows={3}
-          ></textarea>
-          <div className="error-email-message error">
-            Message can't be blank
-          </div>
 
-          <input className="button" type="submit" value="SEND" />
-        </form>
-      </div>
-    );
-  }
+  const resetEmail = () => {
+    form.current.reset();
+    setErrors({});
+    setIsSubmitted(false);
+  };
+
+  return (
+    <div className="contact-form-content">
+      <form id="myform" ref={form} onSubmit={sendEmail}>
+        <div className="name-container">
+          <div className="input-identity">
+            <input type="text" name="firstname" placeholder="First Name" />
+            {isSubmitted && errors.firstname && (
+              <div className="error visible">{errors.firstname}</div>
+            )}
+          </div>
+          <div className="input-identity">
+            <input type="text" name="lastname" placeholder="Last Name" />
+            {isSubmitted && errors.lastname && (
+              <div className="error visible">{errors.lastname}</div>
+            )}
+          </div>
+        </div>
+        <div className="input-field">
+          <input type="text" name="email" placeholder="Email" />
+          {isSubmitted && errors.email && (
+            <div className="error visible">{errors.email}</div>
+          )}
+        </div>
+        <div className="input-field">
+          <textarea name="message" placeholder="Message" rows={3}></textarea>
+          {isSubmitted && errors.message && (
+            <div className="error visible">{errors.message}</div>
+          )}
+        </div>
+        <input
+          className="button"
+          type="submit"
+          value={isSending ? "Sending..." : "SEND"}
+          disabled={isSending}
+        />
+      </form>
+    </div>
+  );
 };
+
 export default ContactForm;

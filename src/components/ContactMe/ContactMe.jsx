@@ -2,8 +2,8 @@ import React from "react";
 import "./ContactMe.css";
 import ContactInfoCard from "./ContactInfoCard/ContactInfoCard.jsx";
 import ContactForm from "./ContactForm/ContactForm.jsx";
-import mail from "../../assets/mail.svg";
-import github from "../../assets/github.svg";
+import mail from "/icons/mail.svg";
+import github from "/icons/github.svg";
 
 const ContactMe = () => {
   return (
@@ -20,7 +20,7 @@ const ContactMe = () => {
             />
             <ContactInfoCard
               iconUrl={github}
-              text="https://github.com/Snouuz"
+              text="Github"
               link="https://github.com/Snouuz"
             />
           </div>
