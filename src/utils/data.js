@@ -1,7 +1,7 @@
 export const SKILLS = [ 
   {
     title: "Frontend",
-    iconUrl: "/~roired/portfolio/icons/frontend.svg", // Inclure la base ici
+    iconUrl: "/~roired/portfolio/icons/frontend.svg",
     skills: [
       { skill: "HTML5", iconUrl: "/~roired/portfolio/icons/html.svg" },
       { skill: "CSS3", iconUrl: "/~roired/portfolio/icons/css.svg" },

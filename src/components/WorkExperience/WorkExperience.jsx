@@ -3,9 +3,12 @@ import "./WorkExperience.css";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
 import { WORK_EXPERIENCE } from "../../utils/data";
 import Slider from "react-slick";
+import { useLanguage } from "../LanguageContext"; 
+import { translate } from "../translate";
 
 const WorkExperience = () => {
   const sliderRef = useRef();
+  const { language } = useLanguage();
 
   const settings = {
     dots: false,
@@ -36,7 +39,7 @@ const WorkExperience = () => {
   return (
     <>
       <section id="projects" className="experience-container">
-        <h5>Work Experience</h5>
+        <h5>{translate("title_Work_Experience", language)}</h5>
         <div className="experience-content">
           <div className="arrow-right" onClick={slideRight}>
             <span class="material-symbols-outlined">chevron_right</span>

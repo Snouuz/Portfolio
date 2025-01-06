@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "/icons/logoWhite.svg";
 import MobileNav from "./MobileNav/MobileNav";
+import { useLanguage } from "../LanguageContext"; 
+import { translate } from "../translate";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const { language, switchLanguage } = useLanguage(); // Access language context
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu);
@@ -24,7 +27,7 @@ const Navbar = () => {
               });
             }}
           >
-            <img src={logo} alt="" className="logo" />
+            <img src={logo} alt="Logo" className="logo" />
           </a>
           <ul
             onClick={(event) => {
@@ -45,28 +48,40 @@ const Navbar = () => {
                   });
                 }}
               >
-                Home
+                {translate("home", language)}
               </a>
             </li>
             <li>
               <a className="menu-item" href="#skills">
-                Skills
+              {translate("skill", language)}
               </a>
             </li>
             <li>
               <a className="menu-item" href="#projects">
-                Projets
+              {translate("project", language)}
               </a>
             </li>
 
             <button className="contact-btn" href="#contact">
-              Hire Me
+            {translate("hire_me", language)}
             </button>
 
-            <li> 
-              <a className="language_btn">
-                EN 
-              </a> 
+            <li>
+              {language === "en" ? (
+                <button
+                  onClick={() => switchLanguage("fr")}
+                  className="language-btn"
+                >
+                  EN
+                </button>
+              ) : (
+                <button
+                  onClick={() => switchLanguage("en")}
+                  className="language-btn"
+                >
+                  FR
+                </button>
+              )}
             </li>
           </ul>
 
@@ -81,4 +96,5 @@ const Navbar = () => {
     </>
   );
 };
+
 export default Navbar;

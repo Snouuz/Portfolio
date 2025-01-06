@@ -1,9 +1,12 @@
 import "./ContactForm.css";
 import emailjs from "@emailjs/browser";
 import React, { useRef, useState, useEffect } from "react";
+import { useLanguage } from "../../LanguageContext"; 
+import { translate } from "../../translate";
 
 
 const ContactForm = () => {
+  const { language } = useLanguage();
   const form = useRef();
   const [isSending, setIsSending] = useState(false);
   const [errors, setErrors] = useState({});
@@ -28,12 +31,12 @@ const ContactForm = () => {
     const message = formData.get("message").trim();
 
     const newErrors = {};
-    if (!firstname) newErrors.firstname = "Firstname can't be blank";
-    if (!lastname) newErrors.lastname = "Lastname can't be blank";
+    if (!firstname) newErrors.firstname = translate("FirstName_error", language);
+    if (!lastname) newErrors.lastname = translate("LastName_error", language);
     if (!email || !/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = "Enter a valid email address";
+      newErrors.email = translate("Email_error", language);
     }
-    if (!message) newErrors.message = "Message can't be blank";
+    if (!message) newErrors.message = translate("Message_error", language);
 
     setErrors(newErrors);
     setIsSubmitted(true);
@@ -65,13 +68,13 @@ const ContactForm = () => {
       <form id="myform" ref={form} onSubmit={sendEmail}>
         <div className="name-container">
           <div className="input-identity">
-            <input type="text" name="firstname" placeholder="First Name" />
+            <input type="text" name="firstname" placeholder={translate("FirstName", language)} />
             {isSubmitted && errors.firstname && (
               <div className="error visible">{errors.firstname}</div>
             )}
           </div>
           <div className="input-identity">
-            <input type="text" name="lastname" placeholder="Last Name" />
+            <input type="text" name="lastname" placeholder={translate("LastName", language)} />
             {isSubmitted && errors.lastname && (
               <div className="error visible">{errors.lastname}</div>
             )}
@@ -92,7 +95,7 @@ const ContactForm = () => {
         <input
           className="button"
           type="submit"
-          value={isSending ? "Sending..." : "SEND"}
+          value={isSending ? "Sending..." : translate("send", language)}
           disabled={isSending}
         />
       </form>

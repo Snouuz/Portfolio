@@ -1,0 +1,40 @@
+
+{
+  "en": {
+    "home": "Home",
+    "title_Work_Experience": "Work Experience",
+    "title_Contact_Me": "Contact Me",
+    "project": "Projects",
+    "skill" : "Skills",
+    "hire_me": "Hire Me",
+    "title_about": "About Me",
+    "welcome": "Welcome to my portfolio!",
+    "about": "I am a student looking for an internship for end of january in the field of full stack development. My goal is to combine my technical programming skills with my creativity to create innovative solutions. I am motivated, determined, and always eager to learn. My academic background has allowed me to acquire a solid understanding of the fundamental principles of web and software development. Additionally, I have developed practical skills using various programming languages, frameworks, and technological tools. If you are interested, please do not hesitate to contact me.",
+    "FirstName": "FirstName",
+    "LastName": "LastName",
+    "FirstName_error": "First Name is required",
+    "LastName_error": "Last Name is required",
+    "Email_error": "Email is required",
+    "Message_error": "Message is required",
+    "send": "Send"
+
+  },
+  "fr": {
+    "home": "Accueil",
+    "title_Contact_Me": "Contactez-moi",
+    "title_Work_Experience": "Expérience Professionnelle",
+    "project": "Projets",
+    "skill" : "Compétences",
+    "hire_me": "Engagez-moi",
+    "title_about": "À Propos de moi",
+    "welcome": "Bienvenue sur mon portfolio!",
+    "about": "Je suis un étudiant à la recherche d'un stage pour fin janvier dans le domaine du développement full stack. Mon objectif est de combiner mes compétences techniques en programmation avec ma créativité pour créer des solutions innovantes. Je suis motivé, déterminé et toujours désireux d'apprendre. Mon parcours académique m'a permis d'acquérir une compréhension solide des principes fondamentaux du développement web et logiciel. De plus, j'ai développé des compétences pratiques en utilisant divers langages de programmation, frameworks et outils technologiques. Si vous êtes intéressé, n'hésitez pas à me contacter.",
+    "FirstName": "Prénom",
+    "LastName": "Nom de famille",
+    "FirstName_error": "Le prénom est requis",
+    "LastName_error": "Le nom de famille est requis",
+    "Email_error": "Email est requis",
+    "Message_error": "Message est requis",
+    "send": "Envoyer"
+  }
+}

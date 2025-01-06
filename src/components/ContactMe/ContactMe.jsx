@@ -4,12 +4,15 @@ import ContactInfoCard from "./ContactInfoCard/ContactInfoCard.jsx";
 import ContactForm from "./ContactForm/ContactForm.jsx";
 import mail from "/icons/mail.svg";
 import github from "/icons/github.svg";
+import { useLanguage } from "../LanguageContext"; 
+import { translate } from "../translate";
 
 const ContactMe = () => {
+  const { language } = useLanguage();
   return (
     <>
       <section id="contact" className="contact-container">
-        <h5>Contact Me</h5>
+        <h5>{translate("title_Contact_Me", language)} </h5>
         <div className="contact-content">
           <div style={{ flex: 1 }}>
             <a href=""></a>
