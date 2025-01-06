@@ -62,6 +62,12 @@ const Navbar = () => {
             <button className="contact-btn" href="#contact">
               Hire Me
             </button>
+
+            <li> 
+              <a className="language_btn">
+                EN 
+              </a> 
+            </li>
           </ul>
 
           <button
