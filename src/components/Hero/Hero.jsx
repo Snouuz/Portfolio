@@ -33,6 +33,7 @@ const Hero = () => {
             onClick={handleDownload}
             style={{ cursor: "pointer" }}
           />
+          <div className="hover-text">{translate("click_me", language)}</div>
         </div>
       </div>
     </section>

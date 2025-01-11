@@ -68,19 +68,19 @@ const Navbar = () => {
 
             <li>
               {language === "en" ? (
-                <button
+                <li
                   onClick={() => switchLanguage("fr")}
                   className="language-btn"
                 >
                   EN
-                </button>
+                </li>
               ) : (
-                <button
+                <li
                   onClick={() => switchLanguage("en")}
                   className="language-btn"
                 >
                   FR
-                </button>
+                </li>
               )}
             </li>
           </ul>

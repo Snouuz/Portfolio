@@ -17,6 +17,7 @@
     "Email_error": "Email is required",
     "Message_error": "Message is required",
     "send": "Send",
+    "click_me": "Click to get my CV",
     "Work_Experience": [
       {
         "title": "My portfolio",
@@ -61,6 +62,7 @@
     "Email_error": "Email est requis",
     "Message_error": "Message est requis",
     "send": "Envoyer",
+    "click_me": "Cliquez pour obtenir mon CV",
     "Work_Experience": [
       {
         "title": "Mon portfolio",
