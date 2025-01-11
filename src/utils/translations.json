@@ -16,9 +16,34 @@
     "LastName_error": "Last Name is required",
     "Email_error": "Email is required",
     "Message_error": "Message is required",
-    "send": "Send"
-
-  },
+    "send": "Send",
+    "Work_Experience": [
+      {
+        "title": "My portfolio",
+        "date": "14/03/2024",
+        "responsibilities": [
+          "I created the portfolio you are reading :)",
+          "Using React, node, css, vite"
+        ]
+      },
+      {
+        "title": "Archery",
+        "date": "15/05/2023",
+        "responsibilities": [
+          "I created a webgame for a solo project in class",
+          "Using React, node, webpack"
+        ]
+      },
+      {
+        "title": "SmartSenseHub",
+        "date": "Work in progress",
+        "responsibilities": [
+          "Collaborative Project for Sensor Analysis and Smart Management by a Team of 4.",
+          "Using Blazor, C#, Influxdb, Grafana, Docker, postgreSQL, Python"
+        ]
+      }
+    ]
+    },
   "fr": {
     "home": "Accueil",
     "title_Contact_Me": "Contactez-moi",
@@ -35,6 +60,32 @@
     "LastName_error": "Le nom de famille est requis",
     "Email_error": "Email est requis",
     "Message_error": "Message est requis",
-    "send": "Envoyer"
+    "send": "Envoyer",
+    "Work_Experience": [
+      {
+        "title": "Mon portfolio",
+        "date": "14/03/2024",
+        "responsibilities": [
+          "J'ai créé le portfolio que vous lisez :)",
+          "En utilisant React, node, css, vite"
+        ]
+      },
+      {
+        "title": "Tir à l'arc",
+        "date": "15/05/2023",
+        "responsibilities": [
+          "J'ai créé un jeu web pour un projet en classe",
+          "En utilisant React, node, webpack"
+        ]
+      },
+      {
+        "title": "SmartSenseHub",
+        "date": "En cours",
+        "responsibilities": [
+          "Projet collaboratif pour l'analyse des capteurs et la gestion intelligente avec une équipe de 4 personnes.",
+          "En utilisant Blazor, C#, Influxdb, Grafana, Docker, postgreSQL, Python"
+        ]
+      }
+    ]
   }
 }

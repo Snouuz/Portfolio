@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./WorkExperience.css";
 import ExperienceCard from "./ExperienceCard/ExperienceCard";
-import { WORK_EXPERIENCE } from "../../utils/data";
+import translations from "../../utils/translations.json";
 import Slider from "react-slick";
 import { useLanguage } from "../LanguageContext"; 
 import { translate } from "../translate";
@@ -30,6 +30,8 @@ const WorkExperience = () => {
     ],
   };
 
+  const workExperiences = translations[language]?.Work_Experience || [];
+
   const slideRight = () => {
     sliderRef.current.slickNext();
   };
@@ -48,7 +50,7 @@ const WorkExperience = () => {
             <span class="material-symbols-outlined">chevron_left</span>
           </div>
           <Slider ref={sliderRef} {...settings}>
-            {WORK_EXPERIENCE.map((item) => (
+            {workExperiences.map((item) => (
               <ExperienceCard key={item.title} details={item} />
             ))}
           </Slider>
