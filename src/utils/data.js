@@ -1,41 +1,41 @@
 export const SKILLS = [
   {
     title: "Frontend",
-    iconUrl: "/Portfolio/icons/frontend.svg",
+    iconUrl: "/icons/frontend.svg",
     skills: [
-      { skill: "HTML5", iconUrl: "/Portfolio/icons/html.svg" },
-      { skill: "CSS3", iconUrl: "/Portfolio/icons/css.svg" },
-      { skill: "JavaScript", iconUrl: "/Portfolio/icons/javascript.svg" },
-      { skill: "React", iconUrl: "/Portfolio/icons/react.svg" },
+      { skill: "HTML5", iconUrl: "/icons/html.svg" },
+      { skill: "CSS3", iconUrl: "/icons/css.svg" },
+      { skill: "JavaScript", iconUrl: "/icons/javascript.svg" },
+      { skill: "React", iconUrl: "/icons/react.svg" },
     ],
   },
   {
     title: "Backend",
-    iconUrl: "/Portfolio/icons/backend.svg",
+    iconUrl: "/icons/backend.svg",
     skills: [
-      { skill: "Java", iconUrl: "/Portfolio/icons/java-icon.svg" },
-      { skill: "Node.js", iconUrl: "/Portfolio/icons/nodejs.svg" },
-      { skill: "PostgreSQL", iconUrl: "/Portfolio/icons/postgresql.svg" },
+      { skill: "Java", iconUrl: "/icons/java-icon.svg" },
+      { skill: "Node.js", iconUrl: "/icons/nodejs.svg" },
+      { skill: "PostgreSQL", iconUrl: "/icons/postgresql.svg" },
     ],
   },
   {
     title: "Tools",
-    iconUrl: "/Portfolio/icons/tools.svg",
+    iconUrl: "/icons/tools.svg",
     skills: [
-      { skill: "Figma", iconUrl: "/Portfolio/icons/figma.svg" },
-      { skill: "GitHub", iconUrl: "/Portfolio/icons/github.svg" },
+      { skill: "Figma", iconUrl: "/icons/figma.svg" },
+      { skill: "GitHub", iconUrl: "/icons/github.svg" },
     ],
   },
   {
     title: "Soft Skills",
-    iconUrl: "/Portfolio/icons/softskills.svg",
+    iconUrl: "/icons/softskills.svg",
     skills: [
-      { skill: "Communication", iconUrl: "/Portfolio/icons/communication.svg" },
+      { skill: "Communication", iconUrl: "/icons/communication.svg" },
       {
         skill: "Problem Solving",
-        iconUrl: "/Portfolio/icons/problemsolving.svg",
+        iconUrl: "/icons/problemsolving.svg",
       },
-      { skill: "Teamwork", iconUrl: "/Portfolio/icons/teamwork.svg" },
+      { skill: "Teamwork", iconUrl: "/icons/teamwork.svg" },
     ],
   },
 ];
