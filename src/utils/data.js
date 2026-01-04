@@ -1,48 +1,48 @@
 export const SKILLS = [
   {
     title: "Frontend",
-    iconUrl: "/portfolio/icons/frontend.svg",
+    iconUrl: "/Portfolio/icons/frontend.svg",
     skills: [
-      { skill: "HTML5", iconUrl: "/portfolio/icons/html.svg" },
-      { skill: "CSS3", iconUrl: "/portfolio/icons/css.svg" },
-      { skill: "JavaScript", iconUrl: "/portfolio/icons/javascript.svg" },
-      { skill: "React", iconUrl: "/portfolio/icons/react.svg" },
+      { skill: "HTML5", iconUrl: "/Portfolio/icons/html.svg" },
+      { skill: "CSS3", iconUrl: "/Portfolio/icons/css.svg" },
+      { skill: "JavaScript", iconUrl: "/Portfolio/icons/javascript.svg" },
+      { skill: "React", iconUrl: "/Portfolio/icons/react.svg" },
     ],
   },
   {
     title: "Backend",
-    iconUrl: "/portfolio/icons/backend.svg",
+    iconUrl: "/Portfolio/icons/backend.svg",
     skills: [
-      { skill: "Java", iconUrl: "/portfolio/icons/java-icon.svg" },
-      { skill: "Node.js", iconUrl: "/portfolio/icons/nodejs.svg" },
-      { skill: "PostgreSQL", iconUrl: "/portfolio/icons/postgresql.svg" },
+      { skill: "Java", iconUrl: "/Portfolio/icons/java-icon.svg" },
+      { skill: "Node.js", iconUrl: "/Portfolio/icons/nodejs.svg" },
+      { skill: "PostgreSQL", iconUrl: "/Portfolio/icons/postgresql.svg" },
     ],
   },
   {
     title: "Tools",
-    iconUrl: "/portfolio/icons/tools.svg",
+    iconUrl: "/Portfolio/icons/tools.svg",
     skills: [
-      { skill: "Figma", iconUrl: "/portfolio/icons/figma.svg" },
-      { skill: "GitHub", iconUrl: "/portfolio/icons/github.svg" },
+      { skill: "Figma", iconUrl: "/Portfolio/icons/figma.svg" },
+      { skill: "GitHub", iconUrl: "/Portfolio/icons/github.svg" },
     ],
   },
   {
     title: "Soft Skills",
-    iconUrl: "/portfolio/icons/softskills.svg",
+    iconUrl: "/Portfolio/icons/softskills.svg",
     skills: [
-      { skill: "Communication", iconUrl: "/portfolio/icons/communication.svg" },
+      { skill: "Communication", iconUrl: "/Portfolio/icons/communication.svg" },
       {
         skill: "Problem Solving",
-        iconUrl: "/portfolio/icons/problemsolving.svg",
+        iconUrl: "/Portfolio/icons/problemsolving.svg",
       },
-      { skill: "Teamwork", iconUrl: "/portfolio/icons/teamwork.svg" },
+      { skill: "Teamwork", iconUrl: "/Portfolio/icons/teamwork.svg" },
     ],
   },
 ];
 
 export const WORK_EXPERIENCE = [
   {
-    title: "My portfolio",
+    title: "My Portfolio",
     date: "14/03/2024",
     responsibilities: [
       "I created the portfolio you are reading :)",
