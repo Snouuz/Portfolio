@@ -19,27 +19,35 @@
     "click_me": "Click to get my CV",
     "Work_Experience": [
       {
-        "title": "My portfolio",
-        "date": "14/03/2024",
-        "responsibilities": [
-          "I created the portfolio you are reading :)",
-          "Using React, node, css, vite"
-        ]
-      },
-      {
         "title": "Archery",
-        "date": "15/05/2023",
+        "date": "05/2023",
         "responsibilities": [
           "I created a webgame for a solo project in class",
           "Using React, node, webpack"
         ]
       },
       {
+        "title": "My portfolio",
+        "date": "03/2024",
+        "responsibilities": [
+          "I created the portfolio you are reading :)",
+          "Using React, node, css, vite"
+        ]
+      },
+      {
         "title": "SmartSenseHub",
-        "date": "Work in progress",
+        "date": "10/2024",
         "responsibilities": [
           "Collaborative Project for Sensor Analysis and Smart Management by a Team of 4.",
           "Using Blazor, C#, Influxdb, Grafana, Docker, postgreSQL, Python"
+        ]
+      },
+      {
+        "title": "Netdev",
+        "date": "02/2025 - 09/2025",
+        "responsibilities": [
+          "I worked at Netdev as a web developer",
+          "Using html, tailwind, php, javascript"
         ]
       }
     ]
@@ -64,27 +72,35 @@
     "click_me": "Cliquez pour obtenir mon CV",
     "Work_Experience": [
       {
-        "title": "Mon portfolio",
-        "date": "14/03/2024",
-        "responsibilities": [
-          "J'ai créé le portfolio que vous lisez :)",
-          "En utilisant React, node, css, vite"
-        ]
-      },
-      {
         "title": "Tir à l'arc",
-        "date": "15/05/2023",
+        "date": "05/2023",
         "responsibilities": [
           "J'ai créé un jeu web pour un projet en classe",
           "En utilisant React, node, webpack"
         ]
       },
       {
+        "title": "Mon portfolio",
+        "date": "03/2024",
+        "responsibilities": [
+          "J'ai créé le portfolio que vous lisez :)",
+          "En utilisant React, node, css, vite"
+        ]
+      },
+      {
         "title": "SmartSenseHub",
-        "date": "En cours",
+        "date": "10/2024",
         "responsibilities": [
           "Projet collaboratif pour l'analyse des capteurs et la gestion intelligente avec une équipe de 4 personnes.",
           "En utilisant Blazor, C#, Influxdb, Grafana, Docker, postgreSQL, Python"
+        ]
+      },
+      {
+        "title": "Netdev",
+        "date": "02/2025 - 09/2025",
+        "responsibilities": [
+          "j'ai travailler chez Netdev en tant que développeur web",
+          "En utilisant html, tailwind, php, javascript"
         ]
       }
     ]
