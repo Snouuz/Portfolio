@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
+      <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} language={language} switchLanguage={switchLanguage} />
 
       <nav className="nav-wrapper">
         <div className="nav-content">

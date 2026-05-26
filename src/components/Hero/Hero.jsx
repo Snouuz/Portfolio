@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import ia from "/icons/ia.jpeg";
+import ia from "/icons/Profil.jpg";
 import cv_en from "/icons/CV_Reda_en.pdf";
 import cv_fr from "/icons/CV_Reda_fr.pdf";
 import { useLanguage } from "../LanguageContext";
@@ -11,8 +11,8 @@ const Hero = () => {
 
   const handleDownload = () => {
     const link = document.createElement("a");
-    language : 'en' ? link.href = cv_en: link.href = cv_fr;
-    language : 'en' ? link.download = "CV_Reda_en.pdf" : link.download = "CV_Reda_fr.pdf";
+    link.href = language === 'en' ? cv_en : cv_fr;
+    link.download = language === 'en' ? "CV_Reda_en.pdf" : "CV_Reda_fr.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

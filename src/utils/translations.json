@@ -8,7 +8,7 @@
     "hire_me": "Hire Me",
     "title_about": "About Me",
     "welcome": "Welcome to my portfolio!",
-    "about": "Qualified and enthusiastic web developer with one year of experience creating websites for French companies, I intend to become a software engineer. I continuously develop my technical skills during my free time and love working within a team. I am excited about the opportunity to contribute to company in New Zealand ",
+    "about": "Computer science student pursuing a Master's in System Design and Cybersecurity (UPEC), I'm looking for a 2-year DevSecOps/DevOps apprenticeship starting September 2026 (1 week university / 1 week company). Strong background in Python development, automation, and containerized infrastructure deployment. Passionate about cybersecurity (TryHackMe top 15%), I'm eager to grow and contribute to building robust, sustainable systems alongside motivated teams.",
     "FirstName": "FirstName",
     "LastName": "LastName",
     "FirstName_error": "First Name is required",
@@ -17,38 +17,51 @@
     "Message_error": "Message is required",
     "send": "Send",
     "click_me": "Click to get my CV",
+    "see_more": "See more",
+    "see_less": "See less",
     "Work_Experience": [
       {
-        "title": "Archery",
-        "date": "05/2023",
+        "title": "Job Tracker",
+        "date": "2026",
         "responsibilities": [
-          "I created a webgame for a solo project in class",
-          "Using React, node, webpack"
-        ]
+          "Built a Python/Flask job application tracker with a real-time responsive dashboard",
+          "Integrated Gmail API (OAuth2) to auto-generate follow-up email drafts at D+2 and D+5",
+          "Deployed locally with secure remote mobile access via Tailscale VPN mesh"
+        ],
+        "stack": ["Python", "Flask", "Jinja2", "Gmail API", "OAuth2", "Tailscale"],
+        "description": "A personal productivity tool built to track job applications. The Flask web app features a real-time dashboard (Jinja2) displaying application stats and pipeline status. Gmail OAuth2 integration automatically generates follow-up email drafts at key intervals (D+2 and D+5). The app is deployed locally and securely accessible from mobile via Tailscale (VPN mesh), with automated startup via Windows Task Scheduler."
       },
       {
-        "title": "My portfolio",
-        "date": "03/2024",
+        "title": "SmartSensorHub",
+        "date": "10/2024 - 06/2025",
         "responsibilities": [
-          "I created the portfolio you are reading :)",
-          "Using React, node, css, vite"
-        ]
-      },
-      {
-        "title": "SmartSenseHub",
-        "date": "10/2024",
-        "responsibilities": [
-          "Collaborative Project for Sensor Analysis and Smart Management by a Team of 4.",
-          "Using Blazor, C#, Influxdb, Grafana, Docker, postgreSQL, Python"
-        ]
+          "Deployed an IoT sensor network on Raspberry Pi, containerized with Docker Compose",
+          "Built a secured Flask REST API (token auth) for automated incident reporting",
+          "Developed Python scripts for real-time anomaly detection and automated alerts"
+        ],
+        "stack": ["Python", "Flask", "Docker Compose", "InfluxDB", "Grafana", "Raspberry Pi", "Home Assistant", "Z-Wave"],
+        "description": "End-of-year project at IUT Annecy: a smart sensor management platform built around a Raspberry Pi IoT network. The full stack is containerized with Docker Compose, integrating InfluxDB (token-restricted secure storage), Grafana dashboards, Home Assistant, and Z-Wave sensor modules. Python scripts handle real-time anomaly detection with automated alerting. A Flask REST API (token authentication) manages automatic incident reporting, backed by complete technical documentation."
       },
       {
         "title": "Netdev",
         "date": "02/2025 - 09/2025",
         "responsibilities": [
-          "I worked at Netdev as a web developer",
-          "Using html, tailwind, php, javascript"
-        ]
+          "Developed and secured WordPress client websites (JS, HTML/CSS, PHP)",
+          "Managed OVH production deployments: DNS configuration, SSL certificates, SSH",
+          "Client support via Zammad ticketing and technical documentation for all delivered projects"
+        ],
+        "stack": ["WordPress", "PHP", "JavaScript", "HTML/CSS", "OVH", "Zammad"],
+        "description": "Professional experience at Netdev, a web agency in Annecy — starting as an intern and transitioning to a permanent contract (CDI). I developed and secured WordPress websites for various French clients, handling full production deployments on OVH (DNS, SSL, SSH) and secure credential management. I also managed client support via Zammad and wrote complete technical documentation for each delivered project."
+      },
+      {
+        "title": "My Portfolio",
+        "date": "03/2024",
+        "responsibilities": [
+          "Designed and developed this portfolio from scratch",
+          "Implemented bilingual support (EN/FR) and responsive design"
+        ],
+        "stack": ["React", "Vite", "CSS", "EmailJS"],
+        "description": "This portfolio website, built to showcase my skills and projects. Features include a bilingual interface (English/French), a contact form powered by EmailJS, a skills section with interactive category cards, and a project carousel. Deployed on GitHub Pages with a custom domain."
       }
     ]
   },
@@ -61,7 +74,7 @@
     "hire_me": "Engagez-moi",
     "title_about": "À Propos de moi",
     "welcome": "Bienvenue sur mon portfolio!",
-    "about": "Développeur web qualifié et enthousiaste, avec un an d’expérience dans la création de sites pour des entreprises françaises, je souhaite devenir ingénieur logiciel. Je développe continuellement mes compétences techniques pendant mon temps libre et j’apprécie le travail en équipe. Je suis motivé à l’idée de contribuer à une entreprise en Nouvelle-Zélande.",
+    "about": "Étudiant en Master Conception de Systèmes et Cybersécurité (UPEC), je recherche une alternance de 2 ans dès septembre 2026 (1 sem. université / 1 sem. entreprise). Solide background en développement Python, automatisation et déploiement d'infrastructures conteneurisées. Passionné de cybersécurité (TryHackMe top 15 %), je cherche à évoluer et à contribuer à la construction de systèmes robustes et durables au sein d'équipes motivées.",
     "FirstName": "Prénom",
     "LastName": "Nom de famille",
     "FirstName_error": "Le prénom est requis",
@@ -70,38 +83,51 @@
     "Message_error": "Message est requis",
     "send": "Envoyer",
     "click_me": "Cliquez pour obtenir mon CV",
+    "see_more": "Voir plus",
+    "see_less": "Voir moins",
     "Work_Experience": [
       {
-        "title": "Tir à l'arc",
-        "date": "05/2023",
+        "title": "Job Tracker",
+        "date": "2026",
         "responsibilities": [
-          "J'ai créé un jeu web pour un projet en classe",
-          "En utilisant React, node, webpack"
-        ]
+          "Application web Python/Flask de suivi de candidatures avec dashboard responsive en temps réel",
+          "Intégration API Gmail (OAuth2) pour génération automatique de brouillons de relance à J+2 et J+5",
+          "Déployée localement, accessible depuis mobile via Tailscale (VPN mesh)"
+        ],
+        "stack": ["Python", "Flask", "Jinja2", "Gmail API", "OAuth2", "Tailscale"],
+        "description": "Un outil personnel de suivi de candidatures. L'application Flask propose un dashboard web responsive (Jinja2) avec des statistiques en temps réel sur le pipeline de candidatures. L'intégration de l'API Gmail (OAuth2) génère automatiquement des brouillons de relance aux intervalles clés (J+2 et J+5). L'application est déployée localement et accessible depuis mobile via Tailscale (VPN mesh), avec un lancement automatisé via Windows Task Scheduler."
       },
       {
-        "title": "Mon portfolio",
-        "date": "03/2024",
+        "title": "SmartSensorHub",
+        "date": "10/2024 - 06/2025",
         "responsibilities": [
-          "J'ai créé le portfolio que vous lisez :)",
-          "En utilisant React, node, css, vite"
-        ]
-      },
-      {
-        "title": "SmartSenseHub",
-        "date": "10/2024",
-        "responsibilities": [
-          "Projet collaboratif pour l'analyse des capteurs et la gestion intelligente avec une équipe de 4 personnes.",
-          "En utilisant Blazor, C#, Influxdb, Grafana, Docker, postgreSQL, Python"
-        ]
+          "Réseau de capteurs IoT sur Raspberry Pi, conteneurisé avec Docker Compose",
+          "API REST Flask sécurisée (authentification par token) pour remontée automatique d'incidents",
+          "Scripts Python de surveillance temps réel : détection d'anomalies et alertes automatisées"
+        ],
+        "stack": ["Python", "Flask", "Docker Compose", "InfluxDB", "Grafana", "Raspberry Pi", "Home Assistant", "Z-Wave"],
+        "description": "Projet de fin d'études à l'IUT Annecy : une plateforme de gestion intelligente de capteurs IoT sur Raspberry Pi. L'environnement complet est conteneurisé via Docker Compose, intégrant InfluxDB (stockage sécurisé par token), des dashboards Grafana, Home Assistant et des capteurs Z-Wave. Des scripts Python assurent la surveillance temps réel avec détection d'anomalies et alertes automatisées. Une API REST Flask (authentification par token) gère la remontée automatique d'incidents, le tout accompagné d'une documentation technique complète."
       },
       {
         "title": "Netdev",
         "date": "02/2025 - 09/2025",
         "responsibilities": [
-          "j'ai travailler chez Netdev en tant que développeur web",
-          "En utilisant html, tailwind, php, javascript"
-        ]
+          "Développement et sécurisation de sites WordPress clients (JS, HTML/CSS, PHP)",
+          "Gestion des mises en production OVH : configuration DNS, certificats SSL, SSH",
+          "Support client via Zammad et rédaction des documentations techniques des projets livrés"
+        ],
+        "stack": ["WordPress", "PHP", "JavaScript", "HTML/CSS", "OVH", "Zammad"],
+        "description": "Expérience professionnelle chez Netdev, agence web à Annecy — débuté en stage puis évolution vers un CDI. J'ai développé et sécurisé des sites WordPress pour divers clients français, gérant l'ensemble des déploiements en production sur OVH (DNS, SSL, SSH) et la gestion sécurisée des credentials. J'ai également assuré le support client via la plateforme Zammad et rédigé les documentations techniques complètes pour chaque projet livré."
+      },
+      {
+        "title": "Mon portfolio",
+        "date": "03/2024",
+        "responsibilities": [
+          "Conception et développement de ce portfolio de zéro",
+          "Mise en place du support bilingue (FR/EN) et du design responsive"
+        ],
+        "stack": ["React", "Vite", "CSS", "EmailJS"],
+        "description": "Ce site portfolio, conçu pour présenter mes compétences et mes projets. Il inclut une interface bilingue (français/anglais), un formulaire de contact via EmailJS, une section compétences avec des cartes interactives, et un carousel de projets. Déployé sur GitHub Pages avec un nom de domaine personnalisé."
       }
     ]
   }

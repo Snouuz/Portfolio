@@ -31,16 +31,19 @@
 .nav-content li {
   margin: 0 1.5rem;
 }
-.menu-item, .language-btn {
+.menu-item,
+.language-btn {
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 500;
   color: #fff;
   position: relative;
   cursor: pointer;
+  width: fit-content;
 }
 
-.menu-item::before, .language-btn::before {
+.menu-item::before,
+.language-btn::before {
   content: " ";
   width: 2rem;
   height: 0.2rem;
@@ -57,7 +60,8 @@
   transition: all 0.3s ease;
 }
 
-.menu-item:hover::before, .language-btn:hover::before  {
+.menu-item:hover::before,
+.language-btn:hover::before {
   width: 100%;
   transform: translateX(0);
   opacity: 1;

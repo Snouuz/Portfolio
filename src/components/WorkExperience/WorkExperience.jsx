@@ -50,8 +50,8 @@ const WorkExperience = () => {
             <span class="material-symbols-outlined">chevron_left</span>
           </div>
           <Slider ref={sliderRef} {...settings}>
-            {workExperiences.map((item) => (
-              <ExperienceCard key={item.title} details={item} />
+            {workExperiences.map((item, index) => (
+              <ExperienceCard key={index} details={item} language={language} />
             ))}
           </Slider>
         </div>

@@ -11,7 +11,7 @@ const SkillsInfoCard = ({ heading, skills }) => {
             <div className="skill-info">
               <p>{item.skill}</p>
               <div className="skill-info-icon">
-                <img src={item.iconUrl} />
+                <img src={item.iconUrl} alt={item.skill} />
               </div>
             </div>
           </React.Fragment>

@@ -45,7 +45,12 @@ const ContactForm = () => {
 
     setIsSending(true);
     emailjs
-      .sendForm("service_mh5vhv6", "template_hygmyrm", form.current, "VPt-jEXPYzc2UFUDe")
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
       .then(
         () => {
           resetEmail();

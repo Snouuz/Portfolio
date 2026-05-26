@@ -4,6 +4,8 @@
   border: 1.5px solid var(--active-border-color);
   padding: 1.5rem;
   margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .work-experience-card h6 {
   font-size: 1.05rem;
@@ -18,6 +20,11 @@
   border-radius: 0.3rem;
   padding: 0.4rem 0.6rem;
   margin-bottom: 1.3rem;
+  width: fit-content;
+}
+
+.work-experience-card ul {
+  margin-bottom: 1rem;
 }
 
 .work-experience-card ul li {
@@ -37,6 +44,56 @@
   height: 0.5rem;
   border-radius: 0.5rem;
 }
+
+.work-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.stack-badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  background: var(--ui-element-background);
+  color: var(--low-contrast-text);
+  border: 1px solid var(--border-color);
+  border-radius: 0.3rem;
+  padding: 0.25rem 0.55rem;
+}
+
+.work-description {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--high-contrast-text);
+  margin-bottom: 0.8rem;
+}
+
+.work-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  background: none;
+  border: none;
+  color: var(--component-background);
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0;
+  margin-top: auto;
+  transition: color 0.2s ease;
+}
+
+.work-toggle:hover {
+  color: var(--component-hover-background);
+}
+
+.work-toggle .material-symbols-outlined {
+  font-size: 1rem;
+}
+
 a {
   color: var(--component-background);
   text-decoration: none;

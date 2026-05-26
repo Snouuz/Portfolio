@@ -1,8 +1,10 @@
 import React from "react";
 import "./MobileNav.css";
 import logo from "/icons/logoWhite.svg";
+import { translate } from "../../translate";
 
-const MobileNav = ({ isOpen, toggleMenu }) => {
+const MobileNav = ({ isOpen, toggleMenu, language, switchLanguage }) => {
+
   return (
     <>
       <div
@@ -40,23 +42,31 @@ const MobileNav = ({ isOpen, toggleMenu }) => {
                   });
                 }}
               >
-                Home
+                {translate("home", language)}
               </a>
             </li>
             <li>
               <a className="menu-item" href="#skills">
-                Skills
+                {translate("skill", language)}
               </a>
             </li>
             <li>
               <a className="menu-item" href="#projects">
-                Projets
+                {translate("project", language)}
               </a>
             </li>
 
             <button className="contact-btn" href="#contact">
-              Hire Me
+              {translate("hire_me", language)}
             </button>
+            <li>
+              <li
+                className="language-btn"
+                onClick={() => switchLanguage(language === "en" ? "fr" : "en")}
+              >
+                {language === "en" ? "EN" : "FR"}
+              </li>
+            </li>
           </ul>
         </div>
       </div>
